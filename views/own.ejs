@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+	<!--<link rel="stylesheet" type="text/css" href="../pjsig.css">-->
+</head>
+<body>
+	<center>
+<h1>Your Profile</h1></center>
+<div class="row" style="min-height: 250px">
+	<div class="col-md-4"></div>
+	<div class="col-md-3" style="padding: 20px; margin: 20px; ">
+		<div class="thumbnail" style="background-color:lightgrey">
+			<h4>Name:<%= re[0].firstname %><br><br>
+			Email:<%= re[0].email %><br><br>
+			CourseName:<%= re[0].coursename%><br><br>
+			CollegeName:<%= re[0].collegename%><br><br>
+			Date of Registration:<%= re[0].date%> 
+			</h4>
+		</div>
+	</div>
+</div>
+<div>
+	<center><a href="/logout " style="color:black"><button type="button" class="btn btn-default">Logout</button></a></div></center>
+<br>
+</body>
+</html>

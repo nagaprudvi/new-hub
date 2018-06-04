@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<meta name="viewport" content="width-device-width"/>
+</head>
+<body style="background-color: #98AFC7">
+
+<center><h2 style="color: ;font-size: 30px">STUDENT REGISTRATION</h2></center>
+
+<div class="row" >
+	<div class="col-md-4"></div>
+	<div class="col-md-4 " style="margin-top: 40px" >
+	<center>
+			 
+	
+		<form action="/stdlogin" method="post">
+		<label>Full Name</label><br>
+			<input type="text" name="fname" placeholder="Enter Full Name" class="form-control input-sm" required>
+			<br><br>
+			<label>College Name</label><br>
+			<input type="text" name="clgname" placeholder="Enter Your College Name" class="form-control input-sm" required><br><br>
+			<label> Academic Year</label>
+	<input type="text" name="year" class="form-control input-sm" placeholder="Enter Your Academic Year" required><br><br>
+			<label>Email-Id</label>
+			<input type="email" name="email" placeholder="ex:abc@gmail.com" class="form-control input-sm" required><br><br>
+			<label>Password</label><br>
+			<input type="password" name="password" placeholder="password here" class="form-control input-sm"><br><br>
+			<label> Internship Course Name</label>
+			<input type="text" name="cname" placeholder="course Name" class="form-control input-sm"><br>
+			<label>Date of Registration</label><br>
+			<input type="Date" name="date"><br><br>
+			<label>Contact Number<br></label>
+			<input type="number" name="number" placeholder="Enter your mobile number" class="form-control input-sm" maxlength="10" pattern="[6-9]{1}[0-9]{9} " >
+
+			<br><br><button type="submit" class="btn btn-primary">Submit</button><br><br>
+		</center>
+	</form>
+
+</div>
+	<div class="col-md-4" style="margin-top: 680px;">
+		<h5 style="font-size: 20px">Already user</h5>
+	<a href="/stdlogin"><button type="button" class="btn btn-primary">Login</button></a></center>
+	</div>
+</div>
+
+
+</body>
+</html>

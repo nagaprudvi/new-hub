@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../pjsig.css">
+</head>
+<body>
+	<center>
+<h1>My Profile</h1></center>
+<div class="row h3" style="background-color: aliceblue;min-height: 60px;padding-top: 15px;">
+	<div class="col-md-1"></div>
+	<div class="col-md-6" ><a href="#" onmouseover="white" >Kurnool Social Network</a></div>
+	<div class="col-md-3"><a href="/logout">Logout</a></div>
+</div><br>
+<div class="row" style="min-height: 250px">
+	<div class="col-md-4"></div>
+	<div class="col-md-3" style="padding: 20px; margin: 20px;">
+		<div class="thumbnail">
+			<img src="../kurnool.jpg " ><hr>
+			<h4>Name:<%= re[0].Name %>
+			Email:<%=re[0].email %>
+			Username:<%=re[0].uname %></h4>
+		</div>
+	</div>
+</div>
+</body>
+</html>

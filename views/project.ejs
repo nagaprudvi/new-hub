@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="pjsig.css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bootstrap.min.js"></script>
+	<center>
+
+<h1>Registered Students </h1></center><br>
+<nav class="navbar navbar-inverse navbar-default">
+  <div class="row">
+  	<div class="col-md-1"></div>
+  	<div class="col-md-4 h1" style="color:white;">Student Profiles</a></div>
+  	<div class="col-md-3 h3" style="padding-top: 05px;color: white"><a href="/profile/<%= user %>" style="color: white">My Profile</a></div>
+  	<div class="col-md-2 h3" style="padding-top: 05px;color:white"><a href="/logout" style="color:white">Logout</a></div>
+</div>
+
+</nav>
+
+<br><br><br>
+<div class="row" style="min-height: 250px">
+
+ 	<center><h1 style="margin-left: 20px;color: black">Users</u></h1></center>
+	<%for(var i=0;i<result.length;i++){ %>
+	<div class="col-md-3 " style="padding: 30px; margin: 10px;">
+		<div class="thumbnail">
+		<div class="caption">	
+		<h3>Name:<%= result[i].firstname %></h3>
+		Email:<%= result[i].email %><br>
+		CourseName:<%= result[i].coursename %><br>
+		CollegeName:<%= result[i].collegename %><br>
+		Date of Registration:<%= result[i].date %>
+		<br><a href="/profile/<%= result[i].firstname %>"><button type="button" class="btn btn-primary">Goto profile</button></a>
+		</div>
+		</div>
+		
+	</div>
+<%}%>
+</div>
+</body>
+</html>
